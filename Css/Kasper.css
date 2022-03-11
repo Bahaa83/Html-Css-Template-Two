@@ -45,8 +45,48 @@ html{
     --second-Color:#ffffff;
     --thierd-Color:#df1f88;
     --transparent-color--:rgb(15 116 143 / 70%);
+    --section-padding--: 100px;
 }
 /*--End Globale rulles --*/
+/*--Start components--*/
+.main-heading{
+    text-align: center;
+}
+.main-heading h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 50px;
+    line-height: 1.6;
+    position: relative;
+}
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #333;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-heading p{
+   padding:20px 10px 100px 10px; 
+   color: #777;
+}
+/*--End components--*/
 /*--Start header --*/
 header{
 position: absolute;
@@ -241,4 +281,54 @@ border-color: var(--transparent-color--);
 }
 
 /*--End landing --*/
+/*--Start Services--*/
+.services{
+    padding-top: var(--section-padding--);
+    padding-bottom: var(--section-padding--);
+}
+ .services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+@media (max-width:768px) {
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-container .srv-box{
+        flex-direction: column;
+        align-items: center;
+        }
+    .services-container .srv-box i{
+        padding-bottom: 30px;
+    }
+ 
+        .services-container .srv-box .text{
+            text-align: center;
+            }
+
+}
+ .services-container .srv-box{
+display:flex ;
+}
+.services .services-container .srv-box i{
+    color: #a2a2a2;
+    font-size: 30px;
+    color: #a2a2a2;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.services .services-container .srv-box .text h3{
+    color: var(--main-Color);
+}
+.services .services-container .srv-box p{
+    color: #777;
+    line-height: 1.5;
+    padding-top: 35px;
+}
+/*--End Services--*/
 
