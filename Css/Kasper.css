@@ -389,4 +389,36 @@ display:flex ;
     font-size: 16px;
 }
 /*--End Design--*/
+/*--Start Portfolio--*/
+.portfolio{
+    padding-top: var(--section-padding--);
+    padding-bottom: var(--section-padding--); 
+}
+.portfolio .container .portfolio-menu{
+    text-align: center;
+}
+.portfolio .container .portfolio-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .container .portfolio-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase; 
+    padding: 30px;
+    color:#353235;  
+}
+@media (max-width:767px) {
+    .portfolio .container .portfolio-menu ul li a{
+        padding: 10px;
+    }
+}
+
+.portfolio .container .portfolio-menu ul li a.active,
+.portfolio .container .portfolio-menu ul li a:hover{
+background-color: var(--main-Color);
+color: var(--second-Color);
+}
+/*--End Portfolio--*/
 
