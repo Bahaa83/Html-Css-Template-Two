@@ -479,4 +479,47 @@ width: fit-content;
 margin: 30px auto;
 }
 /*--End Portfolio--*/
+/*--Start Video--*/
+.video{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.video video{
+    height: 600px;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video .text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translatey(-50%);
+    background-color: var(--transparent-color--);
+    padding: 30px;
+}
+.video .text h2{
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    color: var(--second-Color);
+    font-weight: normal;
+}
+.video .text p{
+    margin: 0 0 20px;
+    color: white;
+}
+
+.video .text button{
+text-transform: uppercase;
+background-color:rgb(53, 50, 53,79%);
+color: var(--second-Color);
+padding: 10px 25px;
+border: none;
+
+}
+
+/*--End Video--*/
+
 
