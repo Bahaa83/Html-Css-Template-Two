@@ -486,7 +486,6 @@ margin: 30px auto;
     position: relative;
 }
 .video video{
-    height: 600px;
     overflow: hidden;
     max-width: 100%;
 }
