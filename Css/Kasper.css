@@ -521,73 +521,102 @@ border: none;
 /*--End Video--*/
 /*--Start About us --*/
 .about{
-position: relative;
-}
-.about .container{
-    
-}
-.container .about-img{
+    padding-top: var(--section-padding--);
     text-align: center;
+    overflow: hidden;
 }
-@media (max-width:767px) {
-    .container .about-img{
-        display: none;
-    }
-    .about{
-        padding-bottom: 200px;
-        }
-}
-.container .about-img img{
+.about img{
+    position: relative;
+    bottom: -142px;
+    margin-top: -142px;
     max-width: 100%;
 }
-.statistics{
-    background-image: url(../Images/violetnight640.jpg);
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: -129px;
-}
-.statistics .container{
-    display: flex; 
-    align-items: center;
-}
-.statistics::before{
-content: "";
-left: 0;
-top: 0;
-max-width: 100%;
-background-color: rgb(0 0 0 /70%);
-position: absolute;
-}
-.statistics .statistics-content{
-    background-color: var(--transparent-color--);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+@media (max-width:767px) {
+    .about img{
+        bottom: -70px;
+        margin-top: -70px;
+    }
 }
 
-.statistics .statistics-content .stat-box {
+/*--End About us --*/
+/*--Start Stats--*/
+.stats{
+    padding-top: var(--section-padding--);
+    padding-bottom: var(--section-padding--); 
+    background-image: url("../Images/violetnight640.jpg");
+    background-size: cover;
     text-align: center;
+    position: relative;
+}
+.stats::before{
+    content: "";
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.stats .container{
+    position: relative;
+}
+.stats .stats-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: var(--transparent-color--);
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.stats .stats-content .box{
+    color: white;
+    flex-basis: 25%;
     padding: 30px 0;
 }
-.statistics .statistics-content .stat-box i {
-    color: var(--second-Color);
-    padding-bottom: 15px;
-    font-size: 25px;
+@media (max-width:767px) {
+    .stats .stats-content .box{
+        flex-basis: 100%;
+       border-bottom: 1px solid #777;
+    }
 }
-.statistics .statistics-content .stat-box .number {
-    font-weight: bolder;
-    font-size: 35px;
-    color: var(--second-Color);
-    padding-bottom: 15px;
+@media (min-width:768px) {
+    .stats .stats-content .box{
+        flex-basis: 50%;
+    }
 }
-.statistics .statistics-content .stat-box p {
-    color: white;
-    font-weight: 300;
-    font-size: 12px;
+@media (min-width:900px) {
+    .stats .stats-content .box{
+        flex-basis: 25%;
+    }
 }
-/*--End About us --*/
+.stats .stats-content .box i{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 30px;
+}
+.stats .stats-content .box .number{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.stats .stats-content .box p{
+    font-size: 14px; 
+}
+/*--End Stats--*/
+
+/*--our skills --*/
+
+
+
+/*--Our skills --*/
+
 
 
