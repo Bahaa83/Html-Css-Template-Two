@@ -762,7 +762,12 @@ color: white;
 }
 /*--End Quote--*/
 /*--Start Plans--*/
+.pricing{
+    padding-top: var(--section-padding--);
+    padding-bottom: var(--section-padding--);
+}
 .plans{
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -848,6 +853,81 @@ border-top: 1px solid var(--main-Color);
     margin: 20px auto 0;
 }
 /*--End Plans--*/
+/*--Start Subscribe--*/
+.subscribe{
+    padding-top: var(--section-padding--);
+    padding-bottom: var(--section-padding--);
+    background-image: url("../Images/space1.jpg");
+    background-size: cover;
+    position: relative;
+    color: var(--second-Color);
+}
+.subscribe::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute;
+}
+.subscribe .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media (max-width:991px) {
+    .subscribe .container{
+        flex-direction: column;
+    }
+}
+.subscribe .container form{
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    position: relative;  
+}
+.subscribe .container form i{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 35px;
+}
+.subscribe .container form input[type="mail"]{
+    padding: 15px 15px 15px 60px;
+    background: none;
+    border: 1px solid white;
+    border-right: none;
+    width: calc(100% - 130px);
+    caret-color: var(--main-Color);
+    color: white;
+}
+.subscribe .container form input[type="submit"]{
+    width: 130px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-left: none;
+    border: 1px solid var(--second-Color);
+    background-color: var(--main-Color);
+    color:var(--second-Color)
+    
+}
+.subscribe .container form ::placeholder {
+    color: var(--second-Color);
+    text-transform: uppercase;
+
+}
+.subscribe .container p{
+    line-height: 2;
+    margin-left: 20px;
+}
+@media (max-width:991px) {
+    .subscribe .container p{
+        margin: 30px 0 0 0;
+    }
+}
+
+/*--End Subscribe--*/
 
 
 
